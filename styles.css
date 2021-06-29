@@ -1,0 +1,147 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    padding: 4em 1em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.three-col {
+    padding: 3em;
+}
+
+.three-col img {
+    width: 72px;
+    height: auto;
+    padding-bottom: 2em;
+}
+
+.three-col h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+    font-size: 32px;
+    padding-bottom: 1em;
+}
+
+.three-col p {
+    font-size: 15px;
+    color: var(--transparent-white);
+    line-height: 1.75;
+    padding-bottom: 2em;
+}
+
+.three-col a {
+    display: inline-block;
+    padding:.5em 1em;
+    background-color: var(--very-light-gray);
+    border:3px solid var(--very-light-gray);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 1.5em;
+    font-size:1em;
+}
+
+.three-col a:hover {
+    border:3px solid var(--very-light-gray);    
+    color: var(--very-light-gray);    
+}
+
+.sedan {
+    background-color: var(--bright-orange);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.sedan a{
+    color: var(--bright-orange);
+}
+
+.sedan a:hover{
+    background-color:var(--bright-orange);
+}
+
+.suv {
+    background-color: var(--dark-cyan);
+}
+
+.suv a{
+    color: var(--dark-cyan);
+}
+
+.suv a:hover{
+    background-color:var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.luxury a{
+    color: var(--very-dark-cyan);
+}
+
+.luxury a:hover{
+    background-color:var(--very-dark-cyan);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding:2em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+    .card-section {
+        flex-direction: row;
+        max-width:1024px;
+        margin:0 auto;
+    }
+
+    .three-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .three-col p{
+        padding-bottom:3em;
+    }
+
+    .three-col a {
+        width:max-content;
+        
+    }
+
+    .sedan{
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .luxury{
+        border-radius: 0px 5px 5px 0px;
+    }
+
+}
