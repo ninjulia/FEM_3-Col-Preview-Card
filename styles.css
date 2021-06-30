@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-body {
+.card-bg {
     background-color: var(--very-light-gray);
     padding: 4em 1em;
     font-family: 'Lexend Deca', sans-serif;
@@ -29,7 +29,6 @@ body {
 }
 
 .three-col img {
-    width: 72px;
     height: auto;
     padding-bottom: 2em;
 }
@@ -50,64 +49,64 @@ body {
 
 .three-col a {
     display: inline-block;
-    padding:.5em 1em;
+    padding: .5em 1em;
     background-color: var(--very-light-gray);
-    border:3px solid var(--very-light-gray);
+    border: 3px solid var(--very-light-gray);
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     border-radius: 1.5em;
-    font-size:1em;
+    font-size: 1em;
 }
 
 .three-col a:hover {
-    border:3px solid var(--very-light-gray);    
-    color: var(--very-light-gray);    
+    border: 3px solid var(--very-light-gray);
+    color: var(--very-light-gray);
 }
 
-.sedan {
+.first {
     background-color: var(--bright-orange);
     border-radius: 5px 5px 0px 0px;
 }
 
-.sedan a{
+.first a {
     color: var(--bright-orange);
 }
 
-.sedan a:hover{
-    background-color:var(--bright-orange);
+.first a:hover {
+    background-color: var(--bright-orange);
 }
 
-.suv {
+.second {
     background-color: var(--dark-cyan);
 }
 
-.suv a{
+.second a {
     color: var(--dark-cyan);
 }
 
-.suv a:hover{
-    background-color:var(--dark-cyan);
+.second a:hover {
+    background-color: var(--dark-cyan);
 }
 
-.luxury {
+.third {
     background-color: var(--very-dark-cyan);
     border-radius: 0px 0px 5px 5px;
 }
 
-.luxury a{
+.third a {
     color: var(--very-dark-cyan);
 }
 
-.luxury a:hover{
-    background-color:var(--very-dark-cyan);
+.third a:hover {
+    background-color: var(--very-dark-cyan);
 }
 
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    padding:2em;
+    padding: 2em;
 }
 
 .attribution a {
@@ -117,30 +116,30 @@ body {
 @media only screen and (min-width: 1440px) {
     .card-section {
         flex-direction: row;
-        max-width:1024px;
-        margin:0 auto;
+        max-width: 1024px;
+        margin: 0 auto;
     }
 
-    .three-col{
+    .three-col {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .three-col p{
-        padding-bottom:3em;
+    .three-col p {
+        padding-bottom: 3em;
     }
 
+    .three-col img,
     .three-col a {
-        width:max-content;
-        
+        width: max-content;
     }
 
-    .sedan{
+    .first {
         border-radius: 5px 0px 0px 5px;
     }
 
-    .luxury{
+    .third {
         border-radius: 0px 5px 5px 0px;
     }
 
