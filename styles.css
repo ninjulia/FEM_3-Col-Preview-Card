@@ -12,10 +12,15 @@
     box-sizing: border-box;
 }
 
-.card-bg {
-    background-color: var(--very-light-gray);
-    padding: 4em 1em;
+body {
     font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray);
+}
+
+.card-bg {
+
+    padding: 4em 1em;
+
 }
 
 .card-section {
@@ -45,6 +50,7 @@
     color: var(--transparent-white);
     line-height: 1.75;
     padding-bottom: 2em;
+    max-width: 60ch;
 }
 
 .three-col a {
@@ -102,7 +108,6 @@
     background-color: var(--very-dark-cyan);
 }
 
-
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -113,7 +118,17 @@
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 700px) {
+    body {
+        /* for demo only */
+        height:100vh;
+        width:100vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .card-section {
         flex-direction: row;
         max-width: 1024px;
@@ -123,11 +138,11 @@
     .three-col {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .three-col p {
         padding-bottom: 3em;
+        flex-grow:1;
     }
 
     .three-col img,
